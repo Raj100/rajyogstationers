@@ -44,7 +44,7 @@ export default function AboutPage() {
 
       <main className="flex-1">
         {/* Hero */}
-        <section className="bg-primary py-16">
+        <section className="bg-primary py-16 inset-0 bg-[url('/abstract-yellow-swirls.png')] ">
           <div className="container mx-auto px-4 text-center">
             <Badge className="bg-accent text-accent-foreground mb-4">Since 1995</Badge>
             <h1 className="text-4xl font-bold text-primary-foreground mb-4">About Rajyog Stationers</h1>

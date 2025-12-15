@@ -10,7 +10,7 @@ export function Footer() {
           <div>
             <div className="mb-4">
               <span className="text-2xl font-bold">Rajyog</span>
-              <span className="text-accent font-bold text-2xl">STATIONERS</span>
+              <span className="text-accent- text-blue-500 font-bold text-2xl">STATIONERS</span>
             </div>
             <p className="text-primary-foreground/80 mb-4">
               Your trusted partner for quality stationery, housekeeping materials, safety items, and industrial supplies
@@ -19,15 +19,18 @@ export function Footer() {
             <div className="space-y-2 text-sm">
               <div className="flex items-center gap-2">
                 <Phone className="h-4 w-4 text-accent" />
-                <span>0246-2591118, 9423203629</span>
+                <span>0246-2591118, 9822058336</span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-accent" />
                 <span>rajyogstationers@gmail.com</span>
               </div>
               <div className="flex items-start gap-2">
-                <MapPin className="h-4 w-4 text-accent mt-0.5" />
-                <span>Shop No. 5, Main Market, Gujarat, India</span>
+                <MapPin className="!h-12 !w-12 text-accent mt-0.5" />
+                <div>
+                <span>C-270, Udhyog Bharti Estate,</span>
+                <span>Chhatrapati Sambhaji Maharaj Nagar (formerly Aurangabad) - 431136</span>
+                </div>
               </div>
             </div>
           </div>

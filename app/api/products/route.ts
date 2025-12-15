@@ -5,7 +5,7 @@ import { ObjectId } from "mongodb"
 
 export async function GET(request: NextRequest) {
   try {
-    const { db } = await connectToDatabase()
+const { db } = await connectToDatabase()
     const { searchParams } = new URL(request.url)
 
     const category = searchParams.get("category")

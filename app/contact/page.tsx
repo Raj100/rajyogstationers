@@ -40,14 +40,21 @@ export default function ContactPage() {
 
       <main className="flex-1">
         {/* Hero */}
-        <section className="bg-primary py-16">
-          <div className="container mx-auto px-4 text-center">
-            <h1 className="text-4xl font-bold text-primary-foreground mb-4">Contact Us</h1>
-            <p className="text-primary-foreground/80 max-w-2xl mx-auto">
-              Have questions or need a quote? We're here to help! Reach out to us and our team will respond promptly.
-            </p>
-          </div>
-        </section>
+<section className="relative py-16 bg-[url('/abstract-yellow-swirls.png')] bg-cover bg-center">
+  {/* dark overlay */}
+  <div className="absolute inset-0 bg-black/20"></div>
+
+  {/* content */}
+  <div className="relative z-10 container mx-auto px-4 text-center">
+    <h1 className="text-4xl font-bold text-primary-foreground mb-4">
+      Contact Us
+    </h1>
+    <p className="text-primary-foreground/80 max-w-2xl mx-auto">
+      Have questions or need a quote? We're here to help! Reach out to us and our team will respond promptly.
+    </p>
+  </div>
+</section>
+
 
         <section className="py-16">
           <div className="container mx-auto px-4">
@@ -63,9 +70,9 @@ export default function ContactPage() {
                       <div>
                         <h3 className="font-semibold mb-1">Address</h3>
                         <p className="text-muted-foreground">
-                          Rajyog Complex, Main Market Road
+                          Udhog Bharti Estate, MIDC Waluj
                           <br />
-                          Anand, Gujarat - 388001
+                          Chhatrapati Sambhajinagar (formerly Aurangabad), Maharashtra  - 431136
                         </p>
                       </div>
                     </div>
@@ -85,8 +92,13 @@ export default function ContactPage() {
                             0246-2591118
                           </a>
                           <br />
-                          <a href="tel:9428205634" className="hover:text-primary">
-                            +91 94282 05634
+                          <a href="tel:9822058336" className="hover:text-primary">
+                            +91 9822058336
+                          </a>
+                        </p>
+                        <p className="text-muted-foreground">
+                          <a href="tel:7038978888" className="hover:text-primary">
+                            +91 7038978888
                           </a>
                         </p>
                       </div>
@@ -105,6 +117,11 @@ export default function ContactPage() {
                         <p className="text-muted-foreground">
                           <a href="mailto:rajyogstationers@gmail.com" className="hover:text-primary">
                             rajyogstationers@gmail.com
+                          </a>
+                        </p>
+                        <p className="text-muted-foreground">
+                          <a href="mailto:rajyogstationers@gmail.com" className="hover:text-primary">
+                            contact@rajyogstationers.com
                           </a>
                         </p>
                       </div>

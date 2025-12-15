@@ -89,7 +89,7 @@ export default function HomePage() {
       <main className="flex-1">
         {/* Hero Section */}
         <section className="relative bg-primary overflow-hidden">
-          <div className="absolute inset-0 bg-[url('/abstract-blue-swirls.png')] opacity-10" />
+          <div className="absolute inset-0 bg-[url('/abstract-yellow-swirls.png')] opacity-30" />
           <div className="container mx-auto px-4 py-16 md:py-24 relative">
             <div className="max-w-3xl">
               <Badge className="bg-accent text-accent-foreground mb-4">Trusted Since 1995</Badge>
@@ -98,7 +98,7 @@ export default function HomePage() {
               </h1>
               <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 text-pretty">
                 Housekeeping materials, safety items, account books, and industrial supplies. Quality products at
-                competitive prices for businesses across Gujarat.
+                competitive prices for businesses across India.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
@@ -197,7 +197,7 @@ export default function HomePage() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-16 bg-primary">
+        <section className="py-16 inset-0 bg-[url('/abstract-yellow-red-swirls.png')] ">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl font-bold text-primary-foreground mb-4">Need Bulk Orders?</h2>
             <p className="text-primary-foreground/80 max-w-2xl mx-auto mb-8">
@@ -214,7 +214,7 @@ export default function HomePage() {
                 variant="outline"
                 className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 bg-transparent"
               >
-                <a href="tel:02462591118">Call Now</a>
+                <a href="tel:9822058336">Call Now</a>
               </Button>
             </div>
           </div>

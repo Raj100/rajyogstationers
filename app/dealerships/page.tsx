@@ -62,7 +62,8 @@ export default function DealershipsPage() {
 
       <main className="flex-1">
         {/* Hero */}
-        <section className="bg-primary py-16">
+        <section className="bg-primary py-16 inset-0 bg-[url('/abstract-yellow-swirls.png')] ">
+         {/* <div className="absolute " /> */}
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl font-bold text-primary-foreground mb-4">Our Authorized Dealerships</h1>
             <p className="text-primary-foreground/80 max-w-2xl mx-auto">
