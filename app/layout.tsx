@@ -64,6 +64,8 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] })
 //     apple: "/apple-icon.png",
 //   },
 // }
+import type { Metadata } from "next"
+
 export const metadata: Metadata = {
   title: {
     default: "Rajyog Stationers | Office Stationery, Industrial & Housekeeping Supplies",
@@ -99,6 +101,31 @@ export const metadata: Metadata = {
     canonical: "/",
   },
 
+  /* ✅ Icons & Favicons */
+  icons: {
+    icon: [
+      { url: "/favicon.ico" }, // shortcut icon
+      { url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+    apple: [
+      {
+        url: "/apple-touch-icon.png",
+        sizes: "180x180",
+        type: "image/png",
+      },
+    ],
+  },
+
+  /* ✅ Web App / PWA */
+  manifest: "/site.webmanifest",
+
+  appleWebApp: {
+    title: "Rajyog Stationers",
+    capable: true,
+    statusBarStyle: "default",
+  },
+
   openGraph: {
     title: "Rajyog Stationers | Complete Office & Industrial Supply Store",
     description:
@@ -123,15 +150,6 @@ export const metadata: Metadata = {
     description:
       "Quality office stationery, housekeeping materials, safety items, account books, and industrial supplies from Rajyog Stationers.",
     images: ["/og-image.png"],
-  },
-
-  icons: {
-    icon: [
-      { url: "/favicon.svg", media: "(prefers-color-scheme: light)" },
-      { url: "/favicon.svg", media: "(prefers-color-scheme: dark)" },
-      { url: "/favicon.svg", type: "image/svg+xml" },
-    ],
-    apple: "/apple-touch-icon.png",
   },
 
   robots: {

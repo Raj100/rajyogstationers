@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { Phone, Mail, MapPin } from "lucide-react"
-
+import Image from "next/image"
 export function Footer() {
   return (
     <footer className="bg-primary text-primary-foreground">
@@ -8,9 +8,18 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <div className="mb-4">
+            <div className="flex mb-4 justify-center items-center">
+              <Link href="/">
+                <Image
+                  src="/og-image.png"
+                  alt="Rajyog Stationers"
+                  width={20}
+                  height={20}
+                  className="h-12 w-12 cursor-pointer"
+                />
+              </Link>
               <span className="text-2xl font-bold">Rajyog</span>
-              <span className="text-accent- text-blue-500 font-bold text-2xl">STATIONERS</span>
+              <span className="text-[#ffcd00] font-bold text-2xl">STATIONERS</span>
             </div>
             <p className="text-primary-foreground/80 mb-4">
               Your trusted partner for quality stationery, housekeeping materials, safety items, and industrial supplies
@@ -19,7 +28,7 @@ export function Footer() {
             <div className="space-y-2 text-sm">
               <div className="flex items-center gap-2">
                 <Phone className="h-4 w-4 text-accent" />
-                <span>0246-2591118, 9822058336</span>
+                <span>9822058336, 7038978888</span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-accent" />
@@ -28,8 +37,8 @@ export function Footer() {
               <div className="flex items-start gap-2">
                 <MapPin className="!h-12 !w-12 text-accent mt-0.5" />
                 <div>
-                <span>C-270, Udhyog Bharti Estate,</span>
-                <span>Chhatrapati Sambhaji Maharaj Nagar (formerly Aurangabad) - 431136</span>
+                  <span>C-270, Udhyog Bharti Estate,</span>
+                  <span>Chhatrapati Sambhaji Maharaj Nagar (formerly Aurangabad) - 431136</span>
                 </div>
               </div>
             </div>

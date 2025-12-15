@@ -44,16 +44,27 @@ export default function AboutPage() {
 
       <main className="flex-1">
         {/* Hero */}
-        <section className="bg-primary py-16 inset-0 bg-[url('/abstract-yellow-swirls.png')] ">
-          <div className="container mx-auto px-4 text-center">
-            <Badge className="bg-accent text-accent-foreground mb-4">Since 1995</Badge>
-            <h1 className="text-4xl font-bold text-primary-foreground mb-4">About Rajyog Stationers</h1>
-            <p className="text-primary-foreground/80 max-w-2xl mx-auto">
-              Your trusted partner for quality office supplies, housekeeping materials, safety equipment, and industrial
-              products across Gujarat.
+        <section className="relative py-16 bg-[url('/abstract-yellow-swirls.png')] bg-cover bg-center">
+          {/* Dark overlay */}
+          <div className="absolute inset-0 bg-black/20 z-0"></div>
+
+          {/* Content */}
+          <div className="relative z-10 container mx-auto px-4 text-center">
+            <Badge className="bg-accent text-accent-foreground mb-4">
+              Since 1995
+            </Badge>
+
+            <h1 className="text-4xl font-bold text-white mb-4">
+              About Rajyog Stationers
+            </h1>
+
+            <p className="text-white/90 max-w-2xl mx-auto">
+              Your trusted partner for quality office supplies, housekeeping materials,
+              safety equipment, and industrial products across Gujarat.
             </p>
           </div>
         </section>
+
 
         {/* Story */}
         <section className="py-16">

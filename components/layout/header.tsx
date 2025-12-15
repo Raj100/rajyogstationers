@@ -10,7 +10,7 @@ import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/co
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import { ShoppingCart, Menu, Search, User, Phone, Mail, ChevronDown } from "lucide-react"
 import { CartSheet } from "@/components/cart/cart-sheet"
-
+import Image from "next/image"
 const categories = [
   { name: "Housekeeping Materials", slug: "housekeeping" },
   { name: "Safety Items", slug: "safety" },
@@ -32,9 +32,9 @@ export function Header() {
       <div className="bg-primary text-primary-foreground py-2">
         <div className="container mx-auto px-4 flex justify-between items-center text-sm">
           <div className="flex items-center gap-4">
-            <a href="tel:02462591118" className="flex items-center gap-1 hover:text-accent transition-colors">
+            <a href="tel:9822058336" className="flex items-center gap-1 hover:text-accent transition-colors">
               <Phone className="h-3 w-3" />
-              <span className="hidden sm:inline">0246-2591118</span>
+              <span className="hidden sm:inline">9822058336</span>
             </a>
             <a
               href="mailto:rajyogstationers@gmail.com"
@@ -42,6 +42,13 @@ export function Header() {
             >
               <Mail className="h-3 w-3" />
               <span className="hidden sm:inline">rajyogstationers@gmail.com</span>
+            </a>
+            /
+             <a
+              href="mailto:contact@rajyogstationers.com"
+              className="flex items-center hover:text-accent transition-colors"
+            >
+              <span className="hidden sm:inline">contact@rajyogstationers.com</span>
             </a>
           </div>
           <Link href="/admin" className="hover:text-accent transition-colors">
@@ -52,7 +59,7 @@ export function Header() {
 
       {/* Main header */}
       <div className="container mx-auto px-4 py-4">
-        <div className="flex items-center justify-between gap-4">
+        <div className="flex items-center justify-between md:gap-4">
           {/* Mobile menu */}
           <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
             <SheetTrigger asChild className="lg:hidden">
@@ -60,16 +67,18 @@ export function Header() {
                 <Menu className="h-6 w-6" />
               </Button>
             </SheetTrigger>
-            <SheetContent side="left" className="w-80">
+            <SheetContent side="left" className="w-80 pl-4">
               <SheetHeader>
                 <SheetTitle className="text-left">Menu</SheetTitle>
               </SheetHeader>
-              <nav className="mt-6 space-y-4">
+              <nav className="space-y-2">
                 <Link href="/" className="block py-2 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
                   Home
                 </Link>
+                
                 <div className="space-y-2">
                   <p className="text-sm font-semibold text-muted-foreground">Categories</p>
+                  <hr className="w-70" />
                   {categories.map((cat) => (
                     <Link
                       key={cat.slug}
@@ -80,6 +89,7 @@ export function Header() {
                       {cat.name}
                     </Link>
                   ))}
+                  <hr className="w-70" />
                 </div>
                 <Link href="/about" className="block py-2 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
                   About Us
@@ -96,10 +106,17 @@ export function Header() {
           </Sheet>
 
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
-            <div className="bg-primary text-primary-foreground px-3 py-2 rounded-lg">
-              <span className="text-xl font-bold">Rajyog</span>
-              <span className="text-accent font-bold">STATIONERS</span>
+          <Link href="/" className="flex items-center md:gap-2">
+            <div className="flex justify-center items-center text-primary-foreground px-3 py-2 rounded-lg">
+              <Image
+                  src="/og-image.png"
+                  alt="Rajyog Stationers"
+                  width={20}
+                  height={20}
+                  className="md:h-12 md:w-12 cursor-pointer"
+                />
+              <span className=" md:text-2xl text-[#8B1E1E] font-bold">RAJYOG</span>
+              <span className="text-[#ffcd00] md:text-2xl font-bold">STATIONERS</span>
             </div>
           </Link>
 
