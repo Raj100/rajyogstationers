@@ -18,7 +18,7 @@ export function Footer() {
                   className="h-12 w-12 cursor-pointer"
                 />
               </Link>
-              <span className="text-2xl font-bold">Rajyog</span>
+              <span className="text-2xl font-bold">RAJYOG</span>
               <span className="text-[#ffcd00] font-bold text-2xl">STATIONERS</span>
             </div>
             <p className="text-primary-foreground/80 mb-4">

@@ -1,10 +1,9 @@
 User-agent: *
 Allow: /
 
-# Block internal / non-SEO URLs if any (optional)
-Disallow: /api/
-Disallow: /_next/
 Disallow: /admin/
 
-# Sitemap location
+Disallow: /api/
+
 Sitemap: https://rajyogstationers.com/sitemap.xml
+
